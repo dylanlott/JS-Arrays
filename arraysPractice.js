@@ -4,19 +4,25 @@
 var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item the given array.
 
-  //Code Here
+var first = function(arr){
+  return arr[0]; 
+}
 
+//RETURNED 10
 
-//Next problem
+//Next problem 
 
 
 
 var arr = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the argument and returns the last item the given array.
 
+var last = function(arr){
+  var num = arr.length -1; 
+  return arr[num]; 
+}
 
-  //Code Here
-
+//Checked 
 
 //Next Problem
 
@@ -24,28 +30,41 @@ var arr = [40,50,60];
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
-  //Code Here
+var looper = function(arr){
+  for(i=0; i<arr.length; i++){
+    alert(arr[i]); 
+  }
+}
 
-
+//CHECKED THAT SHIT
 //Next problem
-
-
 
 var letters = ['A', 'B', 'C', 'D', 'E'];
 //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
 
-  //Code Here
+var reversedLooper = function(letters){
+  for(i=letters.length-1; i>=0; i--){
+    alert(letters[i]); 
+  }
+}
 
-
+//CHECKED THAT SHIT WORKS 
 //Next Problem
 
 
 var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
-  //Code Here
+var evenFinder = function(nums){
+  for(i=0; i<=nums.length; i++){
+    if(nums[i]%2 === 1){
+      nums.splice(i, 1);  
+      i--;
+    }
+  }
+}
 
-
+// CHECKED. Note: Decrement after removing items to account for skip in the array 
 //Next problem
 
 
